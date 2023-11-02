@@ -16,10 +16,11 @@ function writePassword() {
 //My Code
 function generatePassword() {
 
+  //The prompt windows
   var passwordLength = window.prompt("How many characters would you like your password? Choose a number betweeen 8 and 128");
  
  if (!passwordLength) {
-   alert("Required Value");
+   alert("Please select a number between 8 and 128");
  } else if (passwordLength < 8 || passwordLength > 128) {
    passwordLength = window.prompt("You must choose a number between 8 and 128");
  } else { 
@@ -29,6 +30,8 @@ function generatePassword() {
    var confirmSpecial = window.confirm("Click OK if you would like any special characters");
  };
  
+
+ //Gathers if you want numbers, letters and special characters
  if (!confirmLower && !confirmNumber && !confirmSpecial && !confirmUpper) {
    window.alert("You must select at least 1")
  }
@@ -78,6 +81,7 @@ function generatePassword() {
    var userchoice = upperCase
  };
 
+ //Created the random password
  var randomPassword = ""
       
  for (var i = 0; i < passwordLength; i++) {
