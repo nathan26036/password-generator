@@ -22,7 +22,7 @@ function generatePassword() {
  if (!passwordLength) {
    alert("Please select a number between 8 and 128");
  } else if (passwordLength < 8 || passwordLength > 128) {
-   passwordLength = window.prompt("You must choose a number between 8 and 128");
+   passwordLength = window.alert("You must choose a number between 8 and 128");
  } else { 
    var confirmLower = window.confirm("Click OK if you would like lower case letters");
    console.log(confirmLower);
@@ -37,7 +37,7 @@ function generatePassword() {
 
  //Gathers if you want numbers, letters and special characters
  if (!confirmLower && !confirmNumber && !confirmSpecial && !confirmUpper) {
-   window.alert("You must select at least 1")
+   window.alert("You must select at least 1 Character type")
  }
  else if (confirmLower && confirmNumber && confirmSpecial && confirmUpper) {
    var userchoice = lowerCase.concat(special, numbers, upperCase)
