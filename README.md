@@ -15,7 +15,7 @@ The goal was to create a random password generator in java. When the button is c
 ![The java script used to create a random password](https://github.com/nathan26036/password-generator/blob/main/Images/password-java.PNG)
   
 ## Installation 
-The final code deployed can be found at 
+The final code deployed can be found at https://nathan26036.github.io/password-generator/
 
 ## Resources
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
