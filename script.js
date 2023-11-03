@@ -18,16 +18,20 @@ function generatePassword() {
 
   //The prompt windows
   var passwordLength = window.prompt("How many characters would you like your password? Choose a number betweeen 8 and 128");
- 
+  console.log(passwordLength);
  if (!passwordLength) {
    alert("Please select a number between 8 and 128");
  } else if (passwordLength < 8 || passwordLength > 128) {
    passwordLength = window.prompt("You must choose a number between 8 and 128");
  } else { 
    var confirmLower = window.confirm("Click OK if you would like lower case letters");
+   console.log(confirmLower);
    var confirmUpper = window.confirm("Click OK if you would like upper case letters");
+   console.log(confirmUpper);
    var confirmNumber = window.confirm("Click OK if you would like any numbers");
+   console.log(confirmNumber);
    var confirmSpecial = window.confirm("Click OK if you would like any special characters");
+   console.log(confirmSpecial);
  };
  
 
@@ -80,16 +84,18 @@ function generatePassword() {
  else if (confirmUpper) {
    var userchoice = upperCase
  };
-
+console.log(userchoice);
  //Created the random password
  var randomPassword = ""
       
  for (var i = 0; i < passwordLength; i++) {
    randomPassword = randomPassword + userchoice[Math.floor(Math.random() * userchoice.length)];
- }
+ } 
+ console.log(randomPassword);
  return randomPassword;
 
  };
+
 }
 
 // Add event listener to generate button
