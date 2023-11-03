@@ -12,7 +12,7 @@ The goal was to create a random password generator in java. When the button is c
 * Created a long if statement for when the user selects their criteria that outputs what they selected so it could be all 4 or 3 or 2 or just 1
 * Created a for loop that will randomly select from the user choices that makes a random password
 
-![The java script used to create a random password](https://github.com/nathan26036/password-generator/blob/main/Assets/Images/password-java.PNG)
+![The java script used to create a random password](https://github.com/nathan26036/password-generator/blob/main/Images/password-java.PNG)
   
 ## Installation 
 The final code deployed can be found at 
